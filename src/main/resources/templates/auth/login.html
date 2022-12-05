@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/blob.js" defer></script>
+</head>
+
+<body style="background: black;">
+    <section class="w-full h-screen flex items-center">
+        <div class="w-4/6 md:w-2/6 mx-auto glass rounded-lg">
+            <form th:action="@{/login}" method="post" class="flex flex-col p-3 text-white">
+                <label for="username" class="mb-2">Usuario</label>
+                <input type="text" id="username" name="username" class="rounded-xl mb-3 px-3 py-2">
+                <label for="password" class="mb-2">Contraseña</label>
+                <input type="password" id="password" name="password" class="rounded-xl mb-3 px-3 py-2">
+
+                <input type="submit" value="Iniciar Sesión"
+                    class="mx-auto w-2/4 mt-3 p-3 rounded-lg bg-gradient-to-r from-cyan-500 to-purple-500 text-white">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
