@@ -29,8 +29,7 @@ public class UserEntity implements UserDetails {
      * @param username
      * @param pasword
      */
-    public UserEntity(long id, String username, String pasword) {
-        this.id = id;
+    public UserEntity(String username, String pasword) {
         this.username = username;
         this.password = pasword;
     }

@@ -4,6 +4,9 @@
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     transition: .4s ease-out;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 canvas {
@@ -19,6 +22,31 @@ canvas {
     background: rgb(104 99 99 / 52%)
 }
 
+.neumorphism {
+    border-radius: 50px;
+    background: #2b6ae9;
+    box-shadow: -20px 20px 60px #255ac6, 20px -20px 60px #317aff;
+}
+
 input[type=submit]:hover {
     cursor: pointer;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    color: #fff;
+    backdrop-filter: blur(6px);
+    background: #ffffff50;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.welcome a {
+    color: #fff;
+    margin-top: 1.7rem;
 }
